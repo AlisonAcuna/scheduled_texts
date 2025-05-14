@@ -49,6 +49,10 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "pry"
+  gem "byebug"
+  gem "pry-byebug"
 end
 
 group :development do
@@ -60,4 +64,9 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "minitest"
+  gem "minitest-bisect"
+  gem "minitest-sprint"
+  gem "minitest-allow"
+  gem "minitest-rails"
 end
