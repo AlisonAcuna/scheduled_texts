@@ -1,0 +1,30 @@
+<%= form_with model: contact do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div>
+    <%= form.label :social %>
+    <%= form.text_field :social %>
+  </div>
+
+  <div>
+    <%= form.label :notes %>
+    <%= form.text_field :notes %>
+  </div>
+
+  <div>
+    <%= form.label :tags %>
+    <%= form.text_field :tags %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

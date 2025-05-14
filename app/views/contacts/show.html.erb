@@ -1,0 +1,10 @@
+<h1><%= @contact.name %></h1>
+
+<h4><%= @contact.phone %></h4>
+<h4><%= @contact.social %></h4>
+<h4><%= @contact.notes %></h4>
+<h4><%= @contact.tags %></h4>
+
+<%= link_to "Back", contacts_path %>
+<%= link_to "Edit", edit_contact_path(@contact) %>
+<%= button_to "Delete", @contact, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
